@@ -1,87 +1,88 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
-Created using JS Bin
-http://jsbin.com
-
-Copyright (c) 2016 by anonymous (http://jsbin.com/radimezacu/1/edit)
-
-Released under the MIT license: http://jsbin.mit-license.org
--->
+   Created using JS Bin
+   http://jsbin.com
+   
+   Copyright (c) 2016 by anonymous (http://jsbin.com/radimezacu/1/edit)
+   
+   Released under the MIT license: http://jsbin.mit-license.org
+   -->
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
-        <meta name="robots" content="noindex" />
-        <meta charset="utf-8" />
-        <title>
-            TP JS
-        </title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" />
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <link rel="stylesheet" href="css/form-elements.css" type="text/css" />
-        <script type="text/javascript" src="js/script.js">
-</script>
-    </head>
-    <body>
-        <!-- Top content -->
-        <div class="top-content">
-            <div class="inner-bg">
-                <div class="container">
-                    <div class="row"></div>
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3 form-box">
-                            <div class="form-top">
-                                <div class="form-top-left">
-                                    <h3>
-                                        Inscription
-                                    </h3>
-                                    <p>
-                                        Entrez vos informations
-                                    </p>
-                                </div>
-                                <div class="form-top-right"> <i id="icon" class="glyphicon glyphicon-user"></i>
-								</div>
-                            </div>
-                            <div class="form-bottom">
-                                <form method="post" action="traitement.php" class="login-form">
-                            	<i name="iid" class=""></i>
-
-									<div class="input-group input-group-lg">
-									  <span class="input-group-addon" id="sizing-addon1"> <i name="iid2" class="fa fa-exclamation-triangle"></i></span>
-									  <input type="text" class="form-control" placeholder="Identifiant" name="id" aria-describedby="sizing-addon1">
-									</div></br>
-									<i name="imdp" class=""></i>
-                                      
-									<div class="input-group input-group-lg">
-									  <span class="input-group-addon" id="sizing-addon1"> <i name="imdp3" name="mdp" class="fa fa-exclamation-triangle"></i></span>
-									  <input type="password" class="form-control" name="mdp" placeholder="Password" aria-describedby="sizing-addon1">
-									</div></br>
-										<div class="progress">
-										  <div name ="prog" class="progress-bar" role="progressbar"  style="width: 0%;">
-											0%
-										  </div>
-										</div>
-									 <i name="imdp2" class=""></i>
-									<div class="input-group input-group-lg">
-									  <span class="input-group-addon" id="sizing-addon1"> <i name="imdp22" class="fa fa-exclamation-triangle"></i></span>
-									  <input type="password" class="form-control" name="mdp2"  placeholder="Retaper Password" aria-describedby="sizing-addon1">
-									</div></br>
-									<i name="iage" class=""></i>
-									<div class="input-group input-group-lg">
-									  <span class="input-group-addon" id="sizing-addon1"> <i name="iage2" class="fa fa-exclamation-triangle"></i></span>
-									  <input type="number" class="form-control"  name="age" placeholder="Age" aria-describedby="sizing-addon1">
-									</div></br>
-                                    <p>
-                                        Accepter les GCU: <input type="checkbox" name="check" />
-                                    </p><button id="btn_login" name="button" type="submit" value="Login" class="btn" disabled="disabled">Connexion</button>
-                                </form>
-                            </div>
+   <head>
+      <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+      <meta name="robots" content="noindex" />
+      <meta charset="utf-8" />
+      <title>
+         TP JS
+      </title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" />
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css" />
+      <link rel="stylesheet" href="css/style.css" type="text/css" />
+      <link rel="stylesheet" href="css/form-elements.css" type="text/css" />
+      <script type="text/javascript" src="js/script.js"></script>
+   </head>
+   <body>
+      <!-- Top content -->
+      <div class="top-content">
+         <div class="inner-bg">
+            <div class="container">
+               <div class="row"></div>
+               <div class="row">
+                  <div class="col-sm-6 col-sm-offset-3 form-box">
+                     <div class="form-top">
+                        <div class="form-top-left">
+                           <h3>
+                              Inscription
+                           </h3>
+                           <p>
+                              Entrez vos informations
+                           </p>
                         </div>
-                    </div>
-                </div>
+                        <div class="form-top-right"> <i id="icon" class="glyphicon glyphicon-user"></i>
+                        </div>
+                     </div>
+                     <div class="form-bottom">
+                        <form method="post" action="traitement.php" class="login-form">
+                           <i name="iid" class=""></i>
+                           <div class="input-group input-group-lg">
+                              <span class="input-group-addon" id="sizing-addon1"> <i name="iid2" class="fa fa-exclamation-triangle"></i></span>
+                              <input type="text" class="form-control" placeholder="Identifiant" name="id" aria-describedby="sizing-addon1">
+                           </div>
+                           </br>
+                           <i name="imdp" class=""></i>
+                           <div class="input-group input-group-lg">
+                              <span class="input-group-addon" id="sizing-addon1"> <i name="imdp3" name="mdp" class="fa fa-exclamation-triangle"></i></span>
+                              <input type="password" class="form-control" name="mdp" placeholder="Password" aria-describedby="sizing-addon1">
+                           </div>
+                           </br>
+                           <div class="progress">
+                              <div name ="prog" class="progress-bar" role="progressbar"  style="width: 0%;">
+                                 0%
+                              </div>
+                           </div>
+                           <i name="imdp2" class=""></i>
+                           <div class="input-group input-group-lg">
+                              <span class="input-group-addon" id="sizing-addon1"> <i name="imdp22" class="fa fa-exclamation-triangle"></i></span>
+                              <input type="password" class="form-control" name="mdp2"  placeholder="Retaper Password" aria-describedby="sizing-addon1">
+                           </div>
+                           </br>
+                           <i name="iage" class=""></i>
+                           <div class="input-group input-group-lg">
+                              <span class="input-group-addon" id="sizing-addon1"> <i name="iage2" class="fa fa-exclamation-triangle"></i></span>
+                              <input type="number" class="form-control"  name="age" placeholder="Age" aria-describedby="sizing-addon1">
+                           </div>
+                           </br>
+                           <p>
+                              Accepter les GCU: <input type="checkbox" name="check" />
+                           </p>
+                           <button id="btn_login" name="button" type="submit" value="Login" class="btn" disabled="disabled">Connexion</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </body>
+         </div>
+      </div>
+   </body>
 </html>
